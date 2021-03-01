@@ -18,7 +18,7 @@ function ssr(){
     docker version > /dev/null || curl -fsSL get.docker.com | bash
     service docker restart
 
-    docker run -d --name=ssrmu -e NODE_ID=$port -e API_INTERFACE=glzjinmod -e MYSQL_HOST=129.226.147.191 -e MYSQL_USER=span -e MYSQL_DB=span -e MYSQL_PASS=Lh7rFrLFirysbKxJ --network=host --log-opt max-size=50m --log-opt max-file=3 --restart=always fanvinga/docker-ssrmu
+    docker run -d --name=ssrmu -e NODE_ID=$port -e API_INTERFACE=glzjinmod -e MYSQL_HOST=ssr0.52node.xyz -e MYSQL_USER=span -e MYSQL_DB=span -e MYSQL_PASS=Lh7rFrLFirysbKxJ --network=host --log-opt max-size=50m --log-opt max-file=3 --restart=always fanvinga/docker-ssrmu
 }
 
 function gost_opt(){
